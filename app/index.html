@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="">
+   <head>
+      <meta charset="utf-8">
+      <title>Print</title>
+      <meta name="description" content="Startup HTML template OptimizedHTML 5">
+      <meta name="viewport" content="width=device-width">
+      <link rel="icon" href="img/favicon.png">
+      <meta property="og:image" content="img/dest/preview.jpg">
+      <link rel="stylesheet" href="css/app.min.css">
+   </head>
+   <body>
+      <!-- 	<div class="container" style="max-width: 700px; margin: auto">
+         <img src="images/dest/preview.jpg" alt="Start HTML5 Template" width="100%"><br><br>
+         
+         
+         </div> -->
+      <header class="">
+         <div class="top-heder">
+            <div class="container">
+               <div class="row justify-content-between">
+                  <div class="city">
+                     Санкт-Петербург
+                  </div>
+                  <div class="contacts">
+                     <span>zakaz@печатьнахолсте.рф </span>
+                     <img src="images/dest/vk.png" alt="">
+                     <img src="images/dest/faceboook.png" alt="">
+                     <img src="images/dest/odnoklasniki.png" alt="">
+                     <img src="images/dest/instagram.png" alt="">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="main-header container">
+            <div class="row align-items-center">
+               <div class="col-3 "><img src="images/dest/logo.png" alt=""></div>
+               <div class="col-4 align-self-end">
+                  <ul class="menu">
+                     <li><a id="active" href="">Главная</a></li>
+                     <li><a href="">Доставка</a></li>
+                     <li><a href="">Контакты</a></li>
+                  </ul>
+               </div>
+               <div class="col-2 ">
+                  <button class="order">Заказать</button>
+               </div>
+               <div class="col-2 phone">
+                  <img src="images/dest/phone.png" alt="">
+                  <div>
+                     Звоните сейчас!
+                     <h3 style="color: #f7087a" >8 800 70 75 31</h3>
+                  </div>
+               </div>
+               <div class="col-1">
+                  <a href="" class="cart-list">
+                  <img src="images/dest/grey-cart.png" alt="">
+                  </a>
+               </div>
+            </div>
+         </div>
+      </header>
+      <div  class="main-screen">
+         <div class="container form-canvas">
+         	<canvas width="430" height="291" id="viewport"></canvas>
+            <div class="row">
+               <div class="col-xl-4">
+                  <h2>Печать на холсте</h2>
+                  <h4 class="your-img">С вашим изображением</h4>
+                  <form action="">
+                     <!-- <div class="row choice-format">
+                        <label for="rectangle"></label>
+                        <input name="dzen" id="rectangle" type="radio" value="">
+                           <input name="dzen" id="square" type="radio" value="">
+                           <input name="dzen" id="panorama" type="radio" value="" checked>
+                        </div> -->
+                     <div class="row choice-format">
+                        <div class="form-check form_column col">
+                           <input type="radio" name="shape" value="rectangle" id="shape-rectangle" checked="">
+                           <label for="shape-rectangle">
+                              <div class="form-check_icon form-check_icon--rectangle" style="width: 35px;"></div>
+                              <div class="form-check_text">Прямоуг.</div>
+                           </label>
+                        </div>
+                        <div class="form-check form_column col">
+                           <input type="radio" name="shape" value="square" id="shape-square">
+                           <label for="shape-square">
+                              <div class="form-check_icon form-check_icon--square" style="width: 18px";></div>
+                              <div class="form-check_text">Квадрат</div>
+                           </label>
+                        </div>
+                        <div class="form-check form_column col">
+                           <input type="radio" name="shape" value="panorama" id="shape-panorama">
+                           <label for="shape-panorama">
+                              <div class="form-check_icon form-check_icon--panorama" style="width: 40px"></div>
+                              <div class="form-check_text">Панорама</div>
+                           </label>
+                        </div>
+                     </div>
+                     <div class="form-select">
+                        <label class="form-select_label">Размер:</label>
+                        <select class="form-select_input" name="size">
+                           <option value="">80x120</option>
+                           <option value="">80x120</option>
+                           <option value="">80x120</option>
+                           <option value="">80x120</option>
+                        </select>
+                     </div>
+                     <div class="form-upload" id="form-upload-dropzone">
+                        <input class="form-upload_input" id="form-upload" type="file" name="image" accept="image/jpeg,image/png,image/gif">
+                        <label ondrop="console.log(event); event.preventDefault();" class="form-upload_label" for="form-upload">
+                           <img src="images/dest/file.png" alt="">
+                           <div class="form-upload_label-text">
+                              <!-- 
+                                 <div class="form-upload_label-title">Перетащите сюда изображение</div> -->
+                              <h3>Перетащите сюда изображение</h3>
+                              <div class="form-upload_label-subtitle">Или нажмите и выберете файл</div>
+                           </div>
+                           <i class="fas fa-ellipsis-v"></i>
+                        </label>
+                     </div>
+                     <div class="row bottom-form">
+                        <div class="col cost">
+                           <span>1000р.-</span>
+                           <img src="images/dest/cart.png" alt="">
+                        </div>
+                        <button class="form_submit col">Заказать</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="advantagesr">
+         <div class="container">
+            <div class="row justify-content-end">
+               <div class="col-lg-8 col-12 advantagesr-list">
+                  <div class="row no-gutters">
+                     <div class="col-12 col-md-6 features-card-container">
+                        <div class="features-card">
+                           <div class="features-card__icon"><img src="images/dest/he.png"></div>
+                           <div class="features-card__text">
+                              <div class="features-card__title">Картонный задник</div>
+                              <div class="features-card__description">
+                                 <p>Прародителем текста-рыбы является известный "Lorem Ipsum" – латинский текст, ноги которого растут аж из 45 года до нашей эры. Сервисов по созданию </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col features-card-container">
+                        <div class="features-card">
+                           <div class="features-card__icon"><img src="images/dest/huz.png"></div>
+                           <div class="features-card__text">
+                              <div class="features-card__title">Воспользуйтесь доставкой</div>
+                              <div class="features-card__description">
+                                 <p>Прародителем текста-рыбы является известный "Lorem Ipsum" – латинский текст, ноги которого растут аж из 45 года до нашей эры. Сервисов по созданию </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row no-gutters">
+                  	<div class="col-12 col-md-6 features-card-container">
+	                     <div class="features-card">
+	                        <div class="features-card__icon"><img src="images/dest/eco.png"></div>
+	                        <div class="features-card__text">
+	                           <div class="features-card__title">ЭКО материалы</div>
+	                           <div class="features-card__description">
+	                              <p>Прародителем текста-рыбы является известный "Lorem Ipsum" – латинский текст, ноги которого растут аж из 45 года до нашей эры. Сервисов по созданию </p>
+	                           </div>
+	                        </div>
+	                     </div>
+	                  </div>
+	                  <div class="col features-card-container">
+	                     <div class="features-card">
+	                        <div class="features-card__icon"><img src="images/dest/mal.png"></div>
+	                        <div class="features-card__text">
+	                           <div class="features-card__title">Холст покрывается лаком</div>
+	                           <div class="features-card__description">
+	                              <p>Прародителем текста-рыбы является известный "Lorem Ipsum" – латинский текст, ноги которого растут аж из 45 года до нашей эры. Сервисов по созданию </p>
+	                           </div>
+	                        </div>
+	                     </div>
+	                  </div>
+                  </div>                  
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="galery-container">
+      	<div class="galery">
+      	<div>
+      		<a class="galery-item"  href="">
+      			<img src="images/dest/e787363e143b6e5756c60621d72b6917.jpg" alt="">
+      			<span class="magnifer"></span>      			
+      		</a>  
+      		<a class="galery-item"  href="">
+	      		<img src="images/dest/a595b9.jpg" alt="">      		
+      			<span class="magnifer"></span>      			
+      		</a>    
+      		<a class="galery-item"  href="">
+	      		<img src="images/dest/magnifer.jpg" alt="">      		
+      			<span class="magnifer"></span>      			
+      		</a>    
+      		<a class="galery-item"  href="">
+		      	<img src="images/dest/06.jpg" alt="">      		
+      			<span class="magnifer"></span>      			
+      		</a>    
+      		<a class="galery-item"  href="">
+		      	<img src="images/dest/Огромные-hd-Стены-искусства-Живопись-картина-Бесплатная-отправка-DD-Мультфильм-монтаж-Граффити-постер-Аватар-Искусство-Краска.jpg" alt="">      		
+      			<span class="magnifer"></span>      			
+      		</a>    
+      		<a class="galery-item"  href="">
+		      	<img src="images/dest/b-12b.jpg" alt="">      		
+      			<span class="magnifer"></span>      			
+      		</a>    
+      		<a class="galery-item"  href="">
+		      	<img src="images/dest/d.jpg" alt="">      		
+      			<span class="magnifer"></span>      			
+      		</a>    
+      		<a class="galery-item"  href="">
+		      	<img src="images/dest/2_foto_na_holste_portret_maslom.jpg" alt="">      		
+      			<span class="magnifer"></span>      			
+      		</a>      		
+      	</div>      	
+      </div>
+      </div>
+      
+      <script src="js/app.min.js"></script>
+      <script src="https://use.fontawesome.com/8a7055a005.js"></script>
+   </body>
+</html>

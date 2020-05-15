@@ -1,0 +1,295 @@
+@import config
+header
+	box-shadow: 1px 0px 7px -2px
+	position: fixed
+	width: 100%
+	top: 0
+	background: #fff
+	z-index: 99
+	transition: .3s
+.header-scroll
+	top: -47px
+.top-heder
+	color: #fff
+	background: #b1b1b1
+	padding: 10px
+.city
+	text-decoration: underline
+	position: relative	
+	&:before 
+		content: ''
+		display: block
+		position: absolute
+		top: 10px
+		right: -15px
+		border: 5px solid transparent
+		border-top: 5px solid
+.contacts
+	img
+		padding-left: 20px
+	span
+		padding: 20px 
+// .main-header
+// 	padding-bottom: 15px
+#viewport
+	position: absolute
+	right: 460px
+	background: #dcdada
+	box-shadow: 0 10px 20px 3px
+	color: #353535
+.menu
+	padding: 0
+	list-style: none
+	display: flex
+	justify-content: center
+	align-items: center
+	height: 100%
+	margin: 0
+	& li
+		a
+			color: #1d354a
+			padding: 40px 16px
+			display: block
+			position: relative
+			text-decoration: none
+			&:before
+				content: ''
+				display: block
+				background: $accent
+				height: 5px
+				width: 0
+				position: absolute
+				right: 16px
+				bottom: 0px
+				transition: .3s
+			&:hover:before
+				width: calc(100% - 32px)
+				left: 16px
+#active:before
+	width: calc(100% - 32px)
+	left: 16px
+.order
+	border: none
+	background: $accent
+	color: #fff
+	padding: 15px
+	border-radius: 20px
+	width: 100%
+	text-transform: uppercase
+.phone
+	display: flex
+	align-items: center
+	justify-content: space-between
+	font-weight: 600
+	font-size: 15px
+.cart-list
+	position: relative
+	&:before
+		content: '1'
+		display: block
+		background: $accent
+		position: absolute
+		z-index: 2
+		border-radius: 10px
+		right: -35px
+		top: -15px
+		text-align: center
+		color: #fff
+		padding: 0 18px
+		font-size: 15px
+.main-screen
+	background: url('http://localhost:3000/images/dest/divan-podushki-kadka-rastenie.jpg')
+	background-size: cover
+	color: #9cd9e4
+	height: calc(100vh - 120px)
+	margin-top: 120px
+	background-position: right
+.your-img
+	font-size: 15px
+.form-canvas
+	padding: 0
+	padding-top: 100px
+	height: 100%
+	&>div
+		height: 100%
+
+
+.form-check label 
+	cursor: pointer
+	display: block
+	padding: 15px
+	position: relative
+.form-check label, .form-select, .form-upload_label 
+	background: #fff
+	border-radius: 10px
+	color: #434b52
+	-webkit-box-shadow: none
+	box-shadow: none
+	transition: .2s
+	position: relative
+.check-form-upload_input, .-form-check input, .form-upload_input 
+	width: .1px
+	height: .1px
+	opacity: 0
+	overflow: hidden
+	position: absolute
+.form-check label:hover, .form-select:hover, .form-upload_label:hover, .form-check input:checked~label
+	box-shadow: 0 8px 24px rgba(71, 182, 240, .32)
+label:hover .form-check_icon, input:checked~label .form-check_icon
+	background-color: #76c3d1
+.form-check_icon 
+	display: inline-block
+	height: 16px
+	background-color: #efefef
+	border-radius: 2px
+	-webkit-transition: background-color .12s ease
+	transition: background-color .12s ease
+.form-check label:after 
+	content: "\F00C"
+	font-family: FontAwesome
+	position: absolute
+	display: block
+	background: $accent
+	top: -5px
+	right: -5px
+	width: 30px
+	height: 30px
+	line-height: 30px
+	transform: scale(0)
+	border-radius: 10px
+	color: #fff
+	transition: .2s
+.choice-format
+	text-align: center
+.form-check input:checked~label:after
+	transform: scale(1)
+.form-check
+	input
+		display: none
+.form-select_input
+	cursor: pointer
+	width: 100%
+	padding: 14px 30px 14px 30%
+	position: relative
+	appearance: none
+	background: none
+	border: none
+.form-select_label 
+	position: absolute
+	display: block
+	width: 30%
+	height: 100%
+	text-align: right
+	font-weight: 500
+	font-size: 1.12rem
+	padding: 10px 15px 10px 10px
+.form-select:after
+	content: "\F0D7"
+	font-family: FontAwesome
+	display: block
+	position: absolute
+	top: 0
+	right: 0
+	padding: 16px 22px 16px 0
+	font-size: .75em
+	color: $accent
+.form-upload_label-text
+	margin: 10px 20px
+.form-upload_label
+	display: flex
+	align-items: center
+	padding: 20px
+	margin-top: 20px
+	cursor: pointer 
+.form_submit
+	font-weight: 700
+	text-transform: uppercase
+	color: #fff
+	background-color: #f7087a
+	border: none
+	border-radius: 5px
+	transition: background-color .12s ease
+	position: relative
+.cost
+	color: #fff
+	border: 2px solid
+	border-radius: 5px
+	padding: 5px
+	position: relative
+	& img
+		border: 2px solid
+		padding: 6.5px
+		position: absolute
+		top: -2px
+		right: -2px
+		border-radius: 0 5px 5px 0
+	& span
+		width: calc(100% - 35px)
+		text-align: center
+		display: block
+.bottom-form>*
+	margin: 12px
+.advantagesr
+	background: url(http://localhost:3000/images/dest/photo.jpg)
+	background-size: cover
+.advantagesr-list
+	margin: 100px 0
+	padding: 20px 0
+.features-card
+	padding: 30px
+	background: #fff
+	height: 100%
+	display: flex
+.features-card-container
+	margin: 1px
+.features-card__icon
+	padding: 10px
+.features-card__title
+	-webkit-box-direction: normal
+	box-sizing: inherit
+	font-weight: 700
+	font-size: 1.2rem
+	color: #003351
+.features-card__description	
+	font-size: 14px
+	font-family: Gotham Pro, sans-serif
+	font-weight: 400
+	color: #5e7188
+	line-height: 1.5
+	-webkit-box-direction: normal
+	box-sizing: inherit
+	margin-top: 24px
+.galery
+	position: relative
+	& div
+		display: flex
+		padding-bottom: 200px
+		position: absolute
+		top: 0
+		left: -0px
+		width: 100%
+		overflow: hidden
+.galery-item
+	position: relative
+	pointer-events: none
+	& .magnifer
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: #6fc0ce99 url(http://localhost:3000/images/dest/magnifer.png)
+		opacity: 0
+		transition: .3s
+		background-repeat: no-repeat
+		background-position: center
+	&:hover>.magnifer
+		opacity: 1!important
+	& img
+		height: 100%
+@media screen and (max-width: 768px) 
+	.galery
+		div
+			position: unset
+			overflow-x: scroll
+			width: 100%
